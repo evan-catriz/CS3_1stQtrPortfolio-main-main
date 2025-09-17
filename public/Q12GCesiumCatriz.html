@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+    <h2> Q1 3rd Graded Exercise submitted by Evan Catriz of 9-Cesium</h2><br>
+    <label>Meal Price:
+        <input id="mealPrice" />
+    </label><br>
+    <label>Tip:
+        <input id="tip" />
+    </label><br>
+    <label>Service Charge:
+        <input id="serviceCharge" />
+    </label> <br>
+
+    <button onclick="totalMeal()"> Accept Input </button>
+    <span id = "tMealPriceId"> </span>
+
+    <script>
+        function totalMeal() {
+              var mPrice = parseFloat(document.getElementById("mealPrice").value);
+              var tPrice = parseFloat(document.getElementById("tip").value);
+              var sChange = parseFloat(document.getElementById("serviceCharge").value);
+              
+              var tMealPrice = (mPrice + tPrice + (sChange / 100 * mPrice));
+              var tMealPrice = tMealPrice.toFixed(2);
+              
+              document.getElementById("tMealPriceId").innerText = `\n\nTotal Meal: ${tMealPrice}$`;
+         
+            /*
+            sources:
+            https://www.w3schools.com/jsref/jsref_parsefloat.asp -- string to number
+            https://www.w3schools.com/jsref/jsref_tofixed.asp -- toFixed() function
+            */
+        }
+    </script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&display=swap');
+    
+    *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Comfortaa', sans-serif;
+    }
+    
+    body{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction:column;
+        height: 100vh;
+        background-color: 	#BFD4DB;
+         background: linear-gradient(to right, #BFD4DB, #78A2CC);
+    
+    }
+    button {
+    background-color: #9ed2f6;
+    border: 1px solid black;    
+    padding: 14px 30px;
+    font-size: 18px;
+    border-radius: 40px; 
+    cursor: pointer;
+    margin-top: 20px;
+    color: white;
+    font-weight: bold;
+    transition: background 0.3s, transform 0.2s, box-shadow 0.3s;
+}
+
+button:hover {
+    background-color: #D5D3F8;
+    transform: translateY(-3px);
+    box-shadow: 0 6px 12px rgba(0,0,0,0.2);
+}
+    </style>
+</body>
+</html>

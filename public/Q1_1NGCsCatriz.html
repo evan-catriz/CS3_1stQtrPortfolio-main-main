@@ -1,0 +1,20 @@
+<body>
+    <script>
+        // let, var, const (cant change), none
+        let age = window.prompt("What is your age?", "30")
+        let maxAge = window.prompt("What is your hypothetical max age?", "100")
+        let numPerDay = window.prompt("How much do you eat this snack daily?", "3")
+        //compute how many more cup noodles needed
+        let totalRequired = (numPerDay*365)*(maxAge - age);
+        //display on browser
+        let check = window.confirm("Is your input correct?");
+        if (check == true) {
+            document.write("age= "+ age + " maxAge= " + maxAge + " numPerDay= " + numPerDay);
+            document.write(" " + "You will need " + totalRequired + " to last you until the ripe old age of " + maxAge);
+        }
+        else {
+            alert("Run the code again");
+        }
+
+    </script>
+</body>
