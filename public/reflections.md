@@ -21,7 +21,7 @@
 ♦ Functions <br>
     The declaration and syntax of these functions are quite different from C++ and Python, so I find it quite challenging to understand and apply to my code. Although I may percieve it as simpler than C++, I do need some more discussion so that I can familiarize myself more with this topic. <br>
 ♦ Debugging <br>
-    I have a really hard time trying to find errors in the code, and this is what makes it difficult for me to understand. I will need more discussion on this so that I can improve my skill and help identify the errors in my program.
+    I have a really hard time trying to find errors in the code, and this is what makes it difficult for me to understand. I will need more discussion on this so that I can improve my skill and help identify the errors in my program. <br>
 ♦ VSCode <br>
     Because it is my first time using this software, I kind of have a hard time using it as my code. Although I may be able to familiarize myself with this software, I would probably need more discussion, especially with its connection to Github.
 
